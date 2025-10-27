@@ -9,6 +9,8 @@ patterns:
 - DELETE (0 in result)
 - ppp224.st.rim.or.jp (23 in result)
 - '^.*$' (1.891.715 in result)
+
+
 При помощи команды /usr/bin/time
 
 ## Default GREP
