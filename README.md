@@ -6,20 +6,20 @@
 # Comparing
 Сравнение производилось на файле размером 205MB(1.891.715 строк)
 patterns:
-- ppp224.st.rim.or.jp (23 in result)
 - DELETE (0 in result)
+- ppp224.st.rim.or.jp (23 in result)
 - '^.*$' (1.891.715 in result)
 При помощи команды /usr/bin/time
 
 ## Default GREP
 ```
-command: /usr/bin/time -al grep ppp224.st.rim.or.jp access.log
-time: 1,02 real         0,91 user         0,03 sys
-memory: ≈1.4MB
-
 command: /usr/bin/time -al grep DELETE access.log
 time: 0,30 real         0,27 user         0,02 sys
 memory: ≈1.3MB
+
+command: /usr/bin/time -al grep ppp224.st.rim.or.jp access.log
+time: 1,02 real         0,91 user         0,03 sys
+memory: ≈1.4MB
 
 command: /usr/bin/time -al grep '^.*$' access.log
 time: 9,09 real         4,60 user         1,46 sys
